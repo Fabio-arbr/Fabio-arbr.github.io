@@ -6,33 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
   <style>
-body#caixa02 {
+html, body#caixa02 {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(192, 192, 169);
-
+  background-color: #6610C2;
   text-align: justify;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#container{
+ position: relative;
+ min-height: 100%;
 }
 
 h1 {
   text-indent: 0.5em;
 }
 
-h2 {
-  text-indent: 0.3em;
-}
-
 p {
   text-indent: 2em;
 }
 
+h2{
+  text-indent: -.3rem;
+}
+
 header {
-  background-color: lightgrey;
+  background-color: #40C206;
   border-radius: 6px;
   text-align: center; 
+  
+  margin-right: 20vw;
+  margin-left: 20vw;
+
+  padding: 10px;
 }
 
 nav {
-  background-color: rgb(173, 173, 173);
+  background-color: #C29F19;
+  border-radius: 6px;
 }
 
 nav > a {
@@ -41,26 +54,29 @@ nav > a {
 }
 
 main{
-  background-color: lightgray;
+  background-color: #51b423;
   border-radius: 6px;
   
   margin-top: .5rem;
   margin-bottom: .4rem;
+  margin-right: 20vw;
+  margin-left: 20vw;
 
-  padding: 1px 10px 2px 10px;
-
+  padding: 10px;
+  padding-bottom: 60px;
 }
 
 footer {
   background-color: black;
   color: white;
   font-weight: bolder;
-  border-radius: 15px;
   text-align: center;
 
-  padding-top: 0.05rem;
-  padding-bottom: 0.05rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
+
   </style>
   <title>grouping tags</title>
 </head>
@@ -74,36 +90,35 @@ footer {
       </nav>
     </header>
    
-    <main>
-      <section id="introducao">
-        <article>
-          <h2>Introdução</h2>
-          <aside>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolor unde, iste suscipit magni vel repellat voluptatum neque provident? Quas hic voluptate amet adipisci molestias earum magnam dolores placeat praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita, rem voluptatem quod fuga, quasi laudantium unde ducimus suscipit ullam exercitationem quos voluptas quam, vero architecto aliquid dolore odio labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odit illum officia. Quia, est, quibusdam deserunt tenetur exercitationem veniam, eligendi sint natus iste blanditiis unde eum ducimus fugit dolore qui.</p>
-          </aside>
-
-          <section id="desenvolvimento">
-            <h2>Desenvolvimento</h2>
+    <div id="container">
+      <main>
+        <section id="introducao">
+          <article>
+            <h2>Introdução</h2>
             <aside>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel natus sed laudantium rerum assumenda. Magni architecto quaerat amet, provident possimus commodi sunt quo inventore ex animi porro minima voluptates! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum in temporibus harum, tempora placeat dolorum enim recusandae repellat suscipit aspernatur veritatis deserunt nobis, ea perferendis sed molestiae, aliquam debitis repellendus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque laudantium assumenda, sint necessitatibus id quod sed? Amet, aperiam? Recusandae aspernatur, eos expedita harum quo voluptatum nesciunt hic nisi? Voluptates, totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt molestiae, facilis, voluptatem in laborum harum culpa blanditiis dolor aliquid eligendi natus commodi impedit. Sit ab id consequuntur tenetur soluta!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolor unde, iste suscipit magni vel repellat voluptatum neque provident? Quas hic voluptate amet adipisci molestias earum magnam dolores placeat praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita, rem voluptatem quod fuga, quasi laudantium unde ducimus suscipit ullam exercitationem quos voluptas quam, vero architecto aliquid dolore odio labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odit illum officia. Quia, est, quibusdam deserunt tenetur exercitationem veniam, eligendi sint natus iste blanditiis unde eum ducimus fugit dolore qui.</p>
             </aside>
-          </section>
-
-          <section id="conclusao">
-            <h2>Conclusão</h2>
-            <aside>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem numquam ratione laboriosam dicta sit. Necessitatibus consequuntur fugiat quo molestias, laudantium, quos ipsa excepturi quasi neque minima accusamus consequatur quis voluptatum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, voluptas quisquam alias dolore iste repellendus sunt nobis! Autem, necessitatibus! Aspernatur, ipsam. Accusamus, fuga voluptatibus in necessitatibus nesciunt iste laborum excepturi?
-              </p>
-            </aside>
-          </section>
-        </article>
-      </section>
-    </main>
-    
-    <footer>
-      <p>Desenvolvido por Fábio Araujo Bruno</p>
-    </footer>
-  
+            <section id="desenvolvimento">
+              <h2>Desenvolvimento</h2>
+              <aside>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel natus sed laudantium rerum assumenda. Magni architecto quaerat amet, provident possimus commodi sunt quo inventore ex animi porro minima voluptates! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum in temporibus harum, tempora placeat dolorum enim recusandae repellat suscipit aspernatur veritatis deserunt nobis, ea perferendis sed molestiae, aliquam debitis repellendus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque laudantium assumenda, sint necessitatibus id quod sed? Amet, aperiam? Recusandae aspernatur, eos expedita harum quo voluptatum nesciunt hic nisi? Voluptates, totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt molestiae, facilis, voluptatem in laborum harum culpa blanditiis dolor aliquid eligendi natus commodi impedit. Sit ab id consequuntur tenetur soluta!</p>
+              </aside>
+            </section>
+            <section id="conclusao">
+              <h2>Conclusão</h2>
+              <aside>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem numquam ratione laboriosam dicta sit. Necessitatibus consequuntur fugiat quo molestias, laudantium, quos ipsa excepturi quasi neque minima accusamus consequatur quis voluptatum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, voluptas quisquam alias dolore iste repellendus sunt nobis! Autem, necessitatibus! Aspernatur, ipsam. Accusamus, fuga voluptatibus in necessitatibus nesciunt iste laborum excepturi?
+                </p>
+              </aside>
+            </section>
+          </article>
+        </section>
+      </main>
+      
+      <footer>
+        <p>Desenvolvido por Fábio Araujo Bruno</p>
+      </footer>
+    </div>
   </body>
 </html>
